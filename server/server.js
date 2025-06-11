@@ -4,20 +4,17 @@ const path = require('path');
 
 const app = express();
 
-// CORS configuration
-const corsOptions = {
-  origin: [
-    'http://localhost:3000',
-    'https://statuesque-fairy-c9e645.netlify.app',
-    'https://phys-assoc-web-app.onrender.com'
-  ],
+// Enable CORS for all routes
+app.use(cors({
+  origin: '*',
   methods: ['GET', 'POST', 'PUT', 'DELETE', 'PATCH', 'OPTIONS'],
-  allowedHeaders: ['Content-Type', 'Authorization'],
-  credentials: true
-};
+  allowedHeaders: ['Content-Type', 'Authorization', 'X-Requested-With', 'Accept'],
+  credentials: true,
+  preflightContinue: false,
+  optionsSuccessStatus: 204
+}));
 
 // Middleware
-app.use(cors(corsOptions));
 app.use(express.json());
 
 // Routes
