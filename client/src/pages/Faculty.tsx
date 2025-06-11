@@ -42,9 +42,10 @@ const Faculty = () => {
     const fetchFaculty = async () => {
       try {
         const response = await axios.get('/api/faculty');
-        setFaculty(response.data);
+        setFaculty(response.data.faculty || []);
       } catch (error) {
         console.error('Error fetching faculty:', error);
+        setFaculty([]);
       }
     };
 
