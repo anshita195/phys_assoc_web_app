@@ -42,6 +42,7 @@ const Faculty = () => {
     const fetchFaculty = async () => {
       try {
         const baseUrl = process.env.REACT_APP_API_URL || 'http://localhost:5000';
+        console.log('API Base URL:', baseUrl);
         const response = await axios.get(`${baseUrl}/api/faculty`);
         setFaculty(response.data);
       } catch (error) {
