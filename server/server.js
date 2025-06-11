@@ -8,10 +8,12 @@ const app = express();
 const corsOptions = {
   origin: [
     'http://localhost:3000',
-    'https://statuesque-fairy-c9e645.netlify.app'
+    'https://statuesque-fairy-c9e645.netlify.app',
+    'https://phys-assoc-web-app.onrender.com'
   ],
-  methods: ['GET', 'POST', 'PUT', 'DELETE', 'PATCH'],
-  allowedHeaders: ['Content-Type', 'Authorization']
+  methods: ['GET', 'POST', 'PUT', 'DELETE', 'PATCH', 'OPTIONS'],
+  allowedHeaders: ['Content-Type', 'Authorization'],
+  credentials: true
 };
 
 // Middleware

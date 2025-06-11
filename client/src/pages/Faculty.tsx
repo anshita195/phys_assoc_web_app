@@ -41,9 +41,11 @@ const Faculty = () => {
   useEffect(() => {
     const fetchFaculty = async () => {
       try {
-        const baseUrl = process.env.REACT_APP_API_URL || 'http://localhost:5000';
+        const baseUrl = process.env.REACT_APP_API_URL || 'https://phys-assoc-web-app.onrender.com';
         console.log('API Base URL:', baseUrl);
-        const response = await axios.get(`${baseUrl}/api/faculty`);
+        const response = await axios.get(`${baseUrl}/api/faculty`, {
+          withCredentials: true
+        });
         setFaculty(response.data);
       } catch (error) {
         console.error('Error fetching faculty:', error);
