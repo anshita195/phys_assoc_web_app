@@ -5,11 +5,16 @@ import {
   Grid,
   Paper,
   Box,
+  List,
+  ListItem,
+  ListItemIcon,
+  ListItemText,
 } from '@mui/material';
 import {
   School as SchoolIcon,
   Science as ScienceIcon,
   Group as GroupIcon,
+  EmojiEvents as EmojiEventsIcon,
 } from '@mui/icons-material';
 
 const About: React.FC = () => {
