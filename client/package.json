@@ -1,7 +1,8 @@
 {
-  "name": "client",
+  "name": "phys_assoc_web_app_client",
   "version": "0.1.0",
   "private": true,
+  "proxy": "https://phys-assoc-web-app.onrender.com",
   "dependencies": {
     "@emotion/react": "^11.11.3",
     "@emotion/styled": "^11.11.0",

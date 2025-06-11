@@ -4,14 +4,18 @@ const path = require('path');
 
 const app = express();
 
-// Enable CORS for all routes
+// CORS middleware
 app.use(cors({
-  origin: '*',
-  methods: ['GET', 'POST', 'PUT', 'DELETE', 'PATCH', 'OPTIONS'],
-  allowedHeaders: ['Content-Type', 'Authorization', 'X-Requested-With', 'Accept'],
-  credentials: true,
-  preflightContinue: false,
-  optionsSuccessStatus: 204
+  origin: "https://statuesque-fairy-c9e645.netlify.app", // Explicitly specify the allowed origin
+  credentials: true, // Important for cookies, authorization headers with HTTPS
+  methods: ["GET", "POST", "PUT", "DELETE", "PATCH", "OPTIONS"],
+  allowedHeaders: [
+    "Origin",
+    "Content-Type",
+    "Accept",
+    "Authorization",
+    "X-Request-With"
+  ]
 }));
 
 // Middleware
