@@ -1,0 +1,84 @@
+{
+  "events": [
+    {
+      "id": "E001",
+      "title": "Physics Colloquium: Quantum Computing Breakthroughs",
+      "description": "Join us for an exciting talk by Dr. Sarah Johnson on recent breakthroughs in quantum computing and their implications for the future of computing.",
+      "date": "2024-03-15",
+      "time": "15:00",
+      "location": "Physics Building, Room 101",
+      "speaker": "Dr. Sarah Johnson",
+      "type": "colloquium",
+      "image": "/images/events/quantum-computing.jpg",
+      "registration": {
+        "required": true,
+        "deadline": "2024-03-14",
+        "maxAttendees": 100
+      }
+    },
+    {
+      "id": "E002",
+      "title": "Physics Department Open House",
+      "description": "Prospective students and their families are invited to tour our facilities, meet faculty members, and learn about our programs and research opportunities.",
+      "date": "2024-04-20",
+      "time": "10:00",
+      "location": "Physics Building",
+      "type": "open-house",
+      "image": "/images/events/open-house.jpg",
+      "schedule": [
+        {
+          "time": "10:00",
+          "activity": "Welcome and Introduction"
+        },
+        {
+          "time": "10:30",
+          "activity": "Lab Tours"
+        },
+        {
+          "time": "12:00",
+          "activity": "Lunch with Faculty"
+        },
+        {
+          "time": "13:30",
+          "activity": "Research Presentations"
+        }
+      ],
+      "registration": {
+        "required": true,
+        "deadline": "2024-04-18",
+        "maxAttendees": 50
+      }
+    },
+    {
+      "id": "E003",
+      "title": "Physics Club Meeting: Career Paths in Physics",
+      "description": "Join us for a panel discussion with physics alumni working in various industries. Learn about different career paths and get advice on transitioning from academia to industry.",
+      "date": "2024-03-22",
+      "time": "16:00",
+      "location": "Student Center, Room 203",
+      "type": "club-meeting",
+      "image": "/images/events/career-paths.jpg",
+      "panelists": [
+        {
+          "name": "Dr. John Smith",
+          "position": "Research Scientist",
+          "company": "Tech Innovations Inc."
+        },
+        {
+          "name": "Dr. Lisa Chen",
+          "position": "Data Scientist",
+          "company": "Quantum Analytics"
+        },
+        {
+          "name": "Dr. Robert Johnson",
+          "position": "Physics Teacher",
+          "company": "City High School"
+        }
+      ],
+      "registration": {
+        "required": false,
+        "maxAttendees": 75
+      }
+    }
+  ]
+} 

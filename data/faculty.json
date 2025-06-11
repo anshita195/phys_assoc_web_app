@@ -1,0 +1,127 @@
+{
+  "faculty": [
+    {
+      "id": "F001",
+      "name": "Anil Kumar Gourishetty",
+      "title": "Professor",
+      "email": "sanil.gourishetty@ph.iitr.ac.in",
+      "specialization": "Nuclear Physics",
+      "bio": "Experimental Nuclear Physics, Monte Carlo simulation of response of radiation detectors, Characterization of radiation detectors for different applications, Nuclear Astrophysics, Radiation induced effects in materials, Environmental Radioactivity, Promotion of Sanskrit language and Indian knowledge Systems",
+      "image": "/images/faculty/gourishetty.jpg",
+      "researchAreas": ["Radiation Detectors","AI/ML","Nuclear Physics"],
+      "publications": [
+        {
+          "title": "Neutron-Gamma Pulse Shape Discrimination for Organic Scintillation Detector using 2D CNN based Image Classification",
+          "year": 2025,
+          "journal": "Applied Radiation and Isotopes",
+          "doi": "10.1016/j.apradiso.2024.111653"
+        },
+        {
+          "title": "Thickness Dependent Sensitivity of GAGG:Ce Scintillation detectors for Thermal Neutrons: GEANT4 Simulations and Experimental Measurements",
+          "year": 2025,
+          "journal": "Journal of Radioanalytical and Nuclear Chemistry",
+          "doi": "10.1007/s10967-024-09976-8"
+        }
+      ],
+      "education": [
+        {
+          "degree": "PhD, NuclearPhysics",
+          "institution": "Indian Institute of Technology Kharagpur",
+          "year": 2008
+        },
+        {
+          "degree": "M.Tech, Solid State Technology",
+          "institution": "Indian Institute of Technology Kharagpur",
+          "year": 2002
+        },
+        {
+            "degree": "M.Sc., Physics",
+            "institution": "Kakatiya University",
+            "year": 1998
+          },
+        {
+          "degree": "B. Sc., Maths and Science",
+          "institution": "Kakatiya University",
+          "year": 1996
+        }
+      ]
+    },
+    {
+      "id": "F002",
+      "name": "Peayush Kumar Choubey",
+      "title": "Assistant professor",
+      "email": "peayush@ph.iitr.ac.in",
+      "specialization": "Codensed Matter Physics",
+      "bio": "Unconventional Superconductivity, Strongly-correlated electron systems, Theory of scanning tunneling spectroscopy, Two-dimensional materials and their heterostructures, Applications of machine learning in condensed matter physics",
+      "image": "/images/faculty/peayush.jpg",
+      "researchAreas": ["Superconductivity", "Scanning tunneling spectroscopy"],
+      "publications": [
+        {
+          "title": "Theory of Josephson scanning microscopy with 𝒔-wave tip on unconventional superconducting surface: application to Bi2Sr2CaCu2O8+δ",
+          "year": 2024,
+          "journal": "Physical Review B",
+          "doi": "arXiv:2406.09878v1"
+        },
+        {
+          "title": "Scattering interference signature of a pair density wave state in the cuprate pseudogap phase",
+          "year": 2021,
+          "journal": "Nature Communications",
+          "doi": "10.1038/s41467-021-26028-x"
+        }
+      ],
+      "education": [
+        {
+          "degree": "Ph. D. (equivalent to MS+PhD), Physics",
+          "institution": "University of Florida, Gainesville, FL, USA",
+          "year": 2017
+        },
+        {
+          "degree": "B. Tech. (Electronics Engineering)",
+          "institution": "Indian Institute of Technology (Indian School of Mines)-Dhanbad",
+          "year": 2008
+        }
+      ]
+    },
+    {
+      "id": "F003",
+      "name": "Monojit Bag",
+      "title": "Associate Professor",
+      "email": "monojit.bag@ph.iitr.ac.in",
+      "specialization": "Electronics",
+      "bio": "Organic Electronics, Organic Solar cells, Organic LEDs, FETs, sensors & detectors, Electrical & optical characterization., Organic-inorganic hybrid materials, Perovskite solar cells, stability study, impedance spectroscopy, optical microscopy., Intensity Modulated Photocurrent Spectroscopy, multi-layered device structure, polymer/electrolyte based device.",
+      "image": "/images/faculty/monojit.jpg",
+      "researchAreas": ["Organic Electronics", " Perovskite solar cells"],
+      "publications": [
+        {
+          "title": "A Review of Current Progress in Perovskite-Based Energy Storage to Photorechargeable Systems",
+          "year": 2025,
+          "journal": "Energy & Fuels",
+          "doi": "39, 20, 9185-9231"
+        },
+        {
+          "title": "Unvailing the Role of Amorphous SnO2 for Improved Phase-sstability of Tin-based  Halide Perovsktie Supercapacittor",
+          "year": 2025,
+          "journal": "J. Power Sources",
+          "doi": "641, 236825"
+        }
+      ],
+      "education": [
+        {
+          "degree": "Ph.D., Material Science",
+          "institution": "Jawaharlal Nehru Centre for Advanced Scientific Research",
+          "year": 2011
+        },
+        {
+          "degree": "M.Sc., Physics",
+          "institution": "Pune University",
+          "year": 2006
+        },
+        {
+          "degree": "B. E., Electrical",
+          "institution": "Jadavpur University",
+          "year": 2003
+        }
+      ]
+    }
+  ]
+} 

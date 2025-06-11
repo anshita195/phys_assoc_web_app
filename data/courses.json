@@ -1,0 +1,91 @@
+{
+  "courses": [
+    {
+      "id": "PHYS101",
+      "title": "Introduction to Physics",
+      "description": "A comprehensive introduction to classical mechanics, thermodynamics, and waves. This course covers fundamental principles and their applications in various physical systems.",
+      "credits": 4,
+      "prerequisites": [],
+      "instructor": "F001",
+      "semester": "Fall 2024",
+      "schedule": {
+        "lecture": "MWF 10:00-11:15",
+        "lab": "T 14:00-16:00"
+      },
+      "syllabus": {
+        "topics": [
+          "Newton's Laws of Motion",
+          "Work and Energy",
+          "Conservation Laws",
+          "Thermodynamics",
+          "Wave Motion"
+        ],
+        "textbook": "Physics for Scientists and Engineers by Serway and Jewett",
+        "grading": {
+          "exams": 40,
+          "homework": 20,
+          "labs": 25,
+          "participation": 15
+        }
+      }
+    },
+    {
+      "id": "PHYS201",
+      "title": "Modern Physics",
+      "description": "An introduction to quantum mechanics, special relativity, and atomic physics. This course explores the fundamental principles that revolutionized our understanding of the physical world.",
+      "credits": 4,
+      "prerequisites": ["PHYS101"],
+      "instructor": "F002",
+      "semester": "Spring 2024",
+      "schedule": {
+        "lecture": "TTh 13:00-14:15",
+        "lab": "F 14:00-16:00"
+      },
+      "syllabus": {
+        "topics": [
+          "Special Relativity",
+          "Wave-Particle Duality",
+          "Quantum Mechanics",
+          "Atomic Structure",
+          "Nuclear Physics"
+        ],
+        "textbook": "Modern Physics by Krane",
+        "grading": {
+          "exams": 45,
+          "homework": 20,
+          "labs": 25,
+          "participation": 10
+        }
+      }
+    },
+    {
+      "id": "PHYS301",
+      "title": "Quantum Mechanics",
+      "description": "Advanced study of quantum mechanics, including wave functions, operators, and applications to atomic and molecular systems.",
+      "credits": 4,
+      "prerequisites": ["PHYS201", "MATH202"],
+      "instructor": "F003",
+      "semester": "Fall 2024",
+      "schedule": {
+        "lecture": "MWF 13:00-14:15",
+        "lab": "Th 14:00-16:00"
+      },
+      "syllabus": {
+        "topics": [
+          "Wave Functions",
+          "Operators and Observables",
+          "Time Evolution",
+          "Angular Momentum",
+          "Perturbation Theory"
+        ],
+        "textbook": "Quantum Mechanics by Griffiths",
+        "grading": {
+          "exams": 50,
+          "homework": 25,
+          "labs": 15,
+          "participation": 10
+        }
+      }
+    }
+  ]
+} 

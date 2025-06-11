@@ -1,0 +1,38 @@
+[
+  {
+    "id": "1",
+    "code": "PHYS101",
+    "title": "Introduction to Physics",
+    "description": "A comprehensive introduction to the fundamental principles of physics, including mechanics, thermodynamics, and electromagnetism.",
+    "credits": 3,
+    "prerequisites": [],
+    "instructor": "Dr. John Smith",
+    "semester": "Fall 2024",
+    "schedule": "MWF 10:00-11:15",
+    "location": "Science Building 101"
+  },
+  {
+    "id": "2",
+    "code": "PHYS201",
+    "title": "Classical Mechanics",
+    "description": "Advanced study of classical mechanics, including Lagrangian and Hamiltonian formulations, rigid body dynamics, and oscillations.",
+    "credits": 4,
+    "prerequisites": ["PHYS101"],
+    "instructor": "Dr. Sarah Johnson",
+    "semester": "Spring 2024",
+    "schedule": "TTh 13:00-14:30",
+    "location": "Science Building 203"
+  },
+  {
+    "id": "3",
+    "code": "PHYS301",
+    "title": "Quantum Mechanics",
+    "description": "Introduction to quantum mechanics, covering wave functions, Schrödinger equation, and quantum systems.",
+    "credits": 4,
+    "prerequisites": ["PHYS201", "MATH301"],
+    "instructor": "Dr. Michael Chen",
+    "semester": "Fall 2024",
+    "schedule": "MWF 14:00-15:15",
+    "location": "Science Building 305"
+  }
+] 

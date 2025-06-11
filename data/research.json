@@ -1,0 +1,88 @@
+{
+  "researchAreas": [
+    {
+      "id": "RA001",
+      "name": "Nuclear and Accelerator Physics",
+      "description": "Latest research in nuclear physics.",
+      "faculty": ["F001"],
+      "projects": [
+        {
+          "title": "Development of conversational Sanskrit translator using Neural Machine Translation",
+          "description": "The work involves creating a corpus with a large number of Sanskrit-to-Hindi and Sanskrit-to-English sentences to develop a Sanskrit-to-Hindi translator using Neural Machine Translation . There by we wish to develop a Sanskrit-to-English translator and investigate translation to other Indic languages via 2-step translation using Sanskrit-to-Hindi translator",
+          "funding": "IKS division, Ministry of Education",
+          "duration":"20 May 2022"
+        },
+        {
+          "title": "ALCAM",
+          "description": "Algorithm and software development for alpha continuous air monitor (ALCAM) along with synthesis of indigenous detector",
+          "funding": "DRDO, India",
+          "duration": "17 May 2024"
+        }
+      ],
+      "publications": [
+        {
+          "title": "Neutron-Gamma Pulse Shape Discrimination for Organic Scintillation Detector using 2D CNN based Image Classification",
+          "authors": ["Anil Kumar Gourishetty"],
+          "year": 2025,
+          "journal": "Applied Radiation and Isotopes"
+        }
+      ]
+    },
+    {
+      "id": "RA002",
+      "name": "Electronics",
+      "description": "Latest research in semiconductors and electronics.",
+      "faculty": ["F002"],
+      "projects": [
+        {
+          "title": "Hybrid-Halide Perovskites for Efficient Supercapacitor Application",
+          "description": "Energy storage",
+          "funding": "SERB, DST",
+          "duration": "07 Mar 2022"
+        },
+        {
+          "title": "Semiconductor/electrolyte interfaces by EIS",
+          "description": "Investigation of semiconductor/electrolyte interfaces by EIS and photo-transient measurement",
+          "funding": "SERB-DST",
+          "duration": "31 Mar 2017"
+        }
+      ],
+      "publications": [
+        {
+          "title": "A Review of Current Progress in Perovskite-Based Energy Storage to Photorechargeable Systems",
+          "authors": ["Monojit Bag"],
+          "year": 2025,
+          "journal": "Energy & Fuels"
+        }
+      ]
+    },
+    {
+      "id": "RA003",
+      "name": "Condensed Matter Physics",
+      "description": "Research in condensed matter physics focuses on the study of novel materials and their electronic, magnetic, and optical properties.",
+      "faculty": ["F003"],
+      "projects": [
+        {
+          "title": "Study of low dimensional magnetic and multiferroic materials from first principles calculations",
+          "description": "Theoretical Condensed Matter Physics",
+          "funding": "SERB",
+          "duration": "22 Feb 2022"
+        },
+        {
+          "title": "Investigation of magnetism in NdMn0.5Fe0.5O3 and Nd2MnFeO6",
+          "description": "Experimental and Theoretical Condensed Matter Physics",
+          "funding": "UGC-DAE",
+          "duration": "01 Jan 2016"
+        }
+      ],
+      "publications": [
+        {
+          "title": "Theory of Josephson scanning microscopy with 𝒔-wave tip on unconventional superconducting surface: application to Bi2Sr2CaCu2O8+δ",
+          "authors": ["Peayush Choubey"],
+          "year": 2024,
+          "journal": "Physical Review B"
+        }
+      ]
+    }
+  ]
+} 
