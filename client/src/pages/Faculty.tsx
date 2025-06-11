@@ -41,8 +41,18 @@ const Faculty = () => {
   useEffect(() => {
     const fetchFaculty = async () => {
       try {
-        const response = await axios.get('/api/faculty');
-        setFaculty(response.data.faculty || []);
+        const response = await axios.get('/api/faculty', {
+          headers: {
+            'Accept': 'application/json',
+            'Content-Type': 'application/json'
+          }
+        });
+        if (response.data && response.data.faculty) {
+          setFaculty(response.data.faculty);
+        } else {
+          console.error('Invalid faculty data format:', response.data);
+          setFaculty([]);
+        }
       } catch (error) {
         console.error('Error fetching faculty:', error);
         setFaculty([]);
