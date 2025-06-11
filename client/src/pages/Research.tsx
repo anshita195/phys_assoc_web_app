@@ -7,7 +7,6 @@ import {
   CardContent,
   TextField,
   Box,
-  Chip,
   Accordion,
   AccordionSummary,
   AccordionDetails,
@@ -15,7 +14,7 @@ import {
 import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
 import axios from 'axios';
 
-interface Research {
+interface ResearchArea {
   id: string;
   name: string;
   description: string;
@@ -35,7 +34,7 @@ interface Research {
 }
 
 const Research = () => {
-  const [research, setResearch] = useState<Research[]>([]);
+  const [research, setResearch] = useState<ResearchArea[]>([]);
   const [searchTerm, setSearchTerm] = useState('');
 
   useEffect(() => {

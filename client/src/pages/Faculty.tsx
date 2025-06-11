@@ -12,7 +12,7 @@ import {
 } from '@mui/material';
 import axios from 'axios';
 
-interface Faculty {
+interface FacultyMember {
   id: string;
   name: string;
   title: string;
@@ -35,7 +35,7 @@ interface Faculty {
 }
 
 const Faculty = () => {
-  const [faculty, setFaculty] = useState<Faculty[]>([]);
+  const [faculty, setFaculty] = useState<FacultyMember[]>([]);
   const [searchTerm, setSearchTerm] = useState('');
 
   useEffect(() => {
