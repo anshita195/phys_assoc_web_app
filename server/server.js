@@ -4,8 +4,18 @@ const path = require('path');
 
 const app = express();
 
+// CORS configuration
+const corsOptions = {
+  origin: [
+    'http://localhost:3000',
+    'https://statuesque-fairy-c9e645.netlify.app'
+  ],
+  methods: ['GET', 'POST', 'PUT', 'DELETE', 'PATCH'],
+  allowedHeaders: ['Content-Type', 'Authorization']
+};
+
 // Middleware
-app.use(cors());
+app.use(cors(corsOptions));
 app.use(express.json());
 
 // Routes
