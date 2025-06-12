@@ -41,12 +41,7 @@ const Faculty = () => {
   useEffect(() => {
     const fetchFaculty = async () => {
       try {
-        const response = await axios.get('/api/faculty', {
-          headers: {
-            'Accept': 'application/json',
-            'Content-Type': 'application/json'
-          }
-        });
+        const response = await axios.get('http://localhost:5000/api/faculty');
         if (response.data && response.data.faculty) {
           setFaculty(response.data.faculty);
         } else {

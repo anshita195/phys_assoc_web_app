@@ -8,7 +8,7 @@ router.get('/', async (req, res) => {
     try {
         const data = await fs.readFile(path.join(__dirname, '../../data/faculty.json'), 'utf8');
         const faculty = JSON.parse(data).faculty;
-        res.json(faculty);
+        res.json({ faculty });
     } catch (err) {
         res.status(500).json({ message: err.message });
     }
