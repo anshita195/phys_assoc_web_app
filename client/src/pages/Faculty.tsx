@@ -12,6 +12,10 @@ import {
 } from '@mui/material';
 import axios from 'axios';
 
+// Configure axios defaults
+axios.defaults.withCredentials = true;
+axios.defaults.headers.common['Content-Type'] = 'application/json';
+
 interface FacultyMember {
   id: string;
   name: string;
@@ -41,7 +45,6 @@ const Faculty = () => {
   useEffect(() => {
     const fetchFaculty = async () => {
       try {
-        // Use Render URL in production, localhost in development
         const apiUrl = process.env.NODE_ENV === 'production' 
           ? 'https://phys-assoc-web-app.onrender.com/api/faculty'
           : 'http://localhost:5000/api/faculty';
@@ -50,6 +53,8 @@ const Faculty = () => {
           withCredentials: true,
           headers: {
             'Content-Type': 'application/json',
+            'Accept': 'application/json',
+            'Origin': window.location.origin
           }
         });
         
