@@ -40,7 +40,16 @@ const Research = () => {
   useEffect(() => {
     const fetchResearch = async () => {
       try {
-        const response = await axios.get('http://localhost:5000/api/research');
+        const apiUrl = process.env.NODE_ENV === 'production'
+          ? 'https://phys-assoc-web-app.onrender.com/api/research'
+          : 'http://localhost:5000/api/research';
+          
+        const response = await axios.get(apiUrl, {
+          withCredentials: true,
+          headers: {
+            'Content-Type': 'application/json',
+          }
+        });
         setResearch(response.data);
       } catch (error) {
         console.error('Error fetching research:', error);

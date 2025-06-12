@@ -10,7 +10,9 @@ app.use(cors({
     'http://localhost:3000',
     'https://statuesque-fairy-c9e645.netlify.app'
   ],
-  credentials: true
+  credentials: true,
+  methods: ['GET', 'POST', 'PUT', 'DELETE', 'OPTIONS'],
+  allowedHeaders: ['Content-Type', 'Authorization']
 }));
 
 // Middleware
@@ -21,6 +23,12 @@ app.use('/api/faculty', require('./routes/faculty'));
 app.use('/api/research', require('./routes/research'));
 app.use('/api/events', require('./routes/events'));
 app.use('/api/courses', require('./routes/courses'));
+
+// Error handling middleware
+app.use((err, req, res, next) => {
+  console.error(err.stack);
+  res.status(500).json({ message: 'Something went wrong!' });
+});
 
 const PORT = process.env.PORT || 5000;
 

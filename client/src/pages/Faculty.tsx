@@ -46,7 +46,13 @@ const Faculty = () => {
           ? 'https://phys-assoc-web-app.onrender.com/api/faculty'
           : 'http://localhost:5000/api/faculty';
           
-        const response = await axios.get(apiUrl);
+        const response = await axios.get(apiUrl, {
+          withCredentials: true,
+          headers: {
+            'Content-Type': 'application/json',
+          }
+        });
+        
         if (response.data && response.data.faculty) {
           setFaculty(response.data.faculty);
         } else {
