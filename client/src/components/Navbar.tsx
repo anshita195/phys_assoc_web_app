@@ -15,6 +15,7 @@ import {
 } from '@mui/material';
 import MenuIcon from '@mui/icons-material/Menu';
 import ScienceIcon from '@mui/icons-material/Science';
+import { ThemeToggle } from './ThemeToggle';
 
 const pages = [
   { title: 'Home', path: '/' },
@@ -43,10 +44,14 @@ const Navbar: React.FC = () => {
       position="sticky" 
       elevation={0}
       sx={{
-        backgroundColor: 'white',
-        color: 'primary.main',
+        backgroundColor: 'background.paper',
+        color: 'text.primary',
         borderBottom: '1px solid',
         borderColor: 'divider',
+        backdropFilter: 'blur(8px)',
+        backgroundImage: theme.palette.mode === 'dark' 
+          ? 'linear-gradient(rgba(36, 40, 48, 0.95), rgba(36, 40, 48, 0.95))'
+          : 'linear-gradient(rgba(255, 255, 255, 0.95), rgba(255, 255, 255, 0.95))',
       }}
     >
       <Container maxWidth="lg">
@@ -58,6 +63,10 @@ const Navbar: React.FC = () => {
               mr: 1,
               color: 'primary.main',
               fontSize: 32,
+              transition: 'color 0.3s ease',
+              '&:hover': {
+                color: 'primary.light',
+              },
             }} 
           />
           <Typography
@@ -71,6 +80,10 @@ const Navbar: React.FC = () => {
               fontWeight: 700,
               color: 'primary.main',
               textDecoration: 'none',
+              transition: 'color 0.3s ease',
+              '&:hover': {
+                color: 'primary.light',
+              },
             }}
           >
             Physics Association, IIT Roorkee
@@ -85,6 +98,12 @@ const Navbar: React.FC = () => {
               aria-haspopup="true"
               onClick={handleOpenNavMenu}
               color="inherit"
+              sx={{
+                color: 'text.primary',
+                '&:hover': {
+                  backgroundColor: 'action.hover',
+                },
+              }}
             >
               <MenuIcon />
             </IconButton>
@@ -104,6 +123,12 @@ const Navbar: React.FC = () => {
               onClose={handleCloseNavMenu}
               sx={{
                 display: { xs: 'block', md: 'none' },
+                '& .MuiPaper-root': {
+                  backgroundColor: 'background.paper',
+                  mt: 1.5,
+                  borderRadius: 2,
+                  boxShadow: theme.shadows[4],
+                },
               }}
             >
               {pages.map((page) => (
@@ -112,8 +137,15 @@ const Navbar: React.FC = () => {
                   onClick={handleCloseNavMenu}
                   component={RouterLink}
                   to={page.path}
+                  sx={{
+                    '&:hover': {
+                      backgroundColor: 'action.hover',
+                    },
+                  }}
                 >
-                  <Typography textAlign="center">{page.title}</Typography>
+                  <Typography textAlign="center" color="text.primary">
+                    {page.title}
+                  </Typography>
                 </MenuItem>
               ))}
             </Menu>
@@ -126,6 +158,10 @@ const Navbar: React.FC = () => {
               mr: 1,
               color: 'primary.main',
               fontSize: 28,
+              transition: 'color 0.3s ease',
+              '&:hover': {
+                color: 'primary.light',
+              },
             }} 
           />
           <Typography
@@ -140,13 +176,17 @@ const Navbar: React.FC = () => {
               fontWeight: 700,
               color: 'primary.main',
               textDecoration: 'none',
+              transition: 'color 0.3s ease',
+              '&:hover': {
+                color: 'primary.light',
+              },
             }}
           >
             Physics
           </Typography>
 
           {/* Desktop Menu */}
-          <Box sx={{ flexGrow: 1, display: { xs: 'none', md: 'flex' }, justifyContent: 'flex-end' }}>
+          <Box sx={{ flexGrow: 1, display: { xs: 'none', md: 'flex' }, justifyContent: 'flex-end', alignItems: 'center' }}>
             {pages.map((page) => (
               <Button
                 key={page.title}
@@ -155,18 +195,26 @@ const Navbar: React.FC = () => {
                 onClick={handleCloseNavMenu}
                 sx={{
                   my: 2,
-                  color: 'primary.main',
+                  color: 'text.primary',
                   display: 'block',
                   mx: 1,
+                  transition: 'all 0.3s ease',
                   '&:hover': {
-                    backgroundColor: 'primary.light',
-                    color: 'white',
+                    backgroundColor: 'action.hover',
+                    color: 'primary.main',
+                    transform: 'translateY(-1px)',
                   },
                 }}
               >
                 {page.title}
               </Button>
             ))}
+            <ThemeToggle />
+          </Box>
+
+          {/* Mobile Theme Toggle */}
+          <Box sx={{ display: { xs: 'flex', md: 'none' } }}>
+            <ThemeToggle />
           </Box>
         </Toolbar>
       </Container>
