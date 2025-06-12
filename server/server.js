@@ -4,8 +4,14 @@ const path = require('path');
 
 const app = express();
 
-// CORS middleware - allow all origins in development
-app.use(cors());
+// CORS middleware
+app.use(cors({
+  origin: [
+    'http://localhost:3000',
+    'https://statuesque-fairy-c9e645.netlify.app'
+  ],
+  credentials: true
+}));
 
 // Middleware
 app.use(express.json());

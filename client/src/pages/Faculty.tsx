@@ -41,7 +41,12 @@ const Faculty = () => {
   useEffect(() => {
     const fetchFaculty = async () => {
       try {
-        const response = await axios.get('http://localhost:5000/api/faculty');
+        // Use Render URL in production, localhost in development
+        const apiUrl = process.env.NODE_ENV === 'production' 
+          ? 'https://phys-assoc-web-app.onrender.com/api/faculty'
+          : 'http://localhost:5000/api/faculty';
+          
+        const response = await axios.get(apiUrl);
         if (response.data && response.data.faculty) {
           setFaculty(response.data.faculty);
         } else {
