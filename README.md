@@ -189,12 +189,3 @@ Screenshots:
 
 
 
-
-
-
-
-
-<<<<<<< HEAD
-This project is developed for the Physics Association, IIT Roorkee. All rights reserved. 
-=======
->>>>>>> c6874d6f7c5bea44ed833b60e81fb47e9e1ffa65
